@@ -1,11 +1,11 @@
 const { Pool } = require("pg");
 
 const pool = new Pool({
-    user: "postgres",
-    host: "localhost",
-    database: "coffee_shop",
-    password: "1234",
-    port: 5432
+    connectionString: process.env.DATABASE_URL,
+
+    ssl: process.env.NODE_ENV === "production"
+        ? { rejectUnauthorized: false }
+        : false
 });
 
 pool.on("connect", () => {
@@ -13,7 +13,10 @@ pool.on("connect", () => {
 });
 
 pool.on("error", (error) => {
-    console.error("PostgreSQL pool error:", error.message);
+    console.error(
+        "PostgreSQL pool error:",
+        error.message
+    );
 });
 
 module.exports = pool;
