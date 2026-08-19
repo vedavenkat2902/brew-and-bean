@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Brew & Bean | Coffee Shop</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-mark">
+                <img src="logo.png" alt="">
+            </span>
+
+            <span>Brew & Bean</span>
+
+        </a>
+
+
+        <nav>
+
+            <a href="index.html" class="active">
+                Home
+            </a>
+
+            <a href="menu.html">
+                Menu
+            </a>
+
+            <a href="reservations.html">
+                Reservations
+            </a>
+
+            <a href="orders.html">
+                Orders
+            </a>
+
+        </nav>
+
+
+        <div class="nav-actions">
+
+            <a href="cart.html" class="cart-btn">
+                🛒 <span>0</span>
+            </a>
+            <div class="profile-container" id="profileContainer">
+
+    <button class="profile-btn" id="profileBtn">
+        Profile ▾
+    </button>
+
+    <div class="profile-dropdown" id="profileDropdown">
+
+        <div class="profile-info">
+            <strong id="profileName">User</strong>
+            <span id="profileEmail"></span>
+            <span id="profilePhone"></span>
+        </div>
+
+        <button id="logoutBtn" class="logout-btn">
+            Logout
+        </button>
+
+    </div>
+
+</div>
+
+            <button class="login-btn" id="loginProfileBtn">
+    Login
+</button>
+
+        </div>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <main>
+
+        <section class="hero">
+
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    WELCOME TO BREW & BEAN
+                </p>
+
+
+                <h1>
+                    Your perfect cup
+                    <span>starts here.</span>
+                </h1>
+
+
+                <p class="hero-description">
+                    Freshly brewed coffee, handcrafted with care.
+                    Order your favorites, discover something new,
+                    and make every moment a little warmer.
+                </p>
+
+
+                <div class="hero-actions">
+
+                    <a href="menu.html" class="primary-btn">
+                        Explore Menu
+                        <span>→</span>
+                    </a>
+
+                    <a href="reservations.html" class="secondary-btn">
+                        Reserve a Table
+                    </a>
+
+                </div>
+
+
+                <div class="hero-note">
+
+                    <span>✦</span>
+
+                    Freshly prepared. Always made with care.
+
+                </div>
+
+            </div>
+
+
+            <!-- REAL COFFEE IMAGE -->
+
+            <div class="hero-visual">
+
+                <img
+                    src="hero-coffee.png"
+                    alt="Freshly brewed coffee"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- CATEGORIES -->
+
+        <section class="categories">
+
+
+            <div class="section-title">
+
+                <div>
+
+                    <p class="eyebrow">
+                        EXPLORE
+                    </p>
+
+                    <h2>
+                        What are you in the mood for?
+                    </h2>
+
+                </div>
+
+
+                <p>
+                    Something warm, something cold,
+                    or something sweet.
+                </p>
+
+            </div>
+
+
+            <div class="category-grid">
+
+
+                <!-- COFFEE -->
+
+                <a href="menu.html" class="category-card">
+
+                    <div class="category-icon">
+
+                        <img
+                            src="coffee-category.png"
+                            alt="Coffee"
+                        >
+
+                    </div>
+
+                    <h3>
+                        Coffee
+                    </h3>
+
+                </a>
+
+
+                <!-- COLD DRINKS -->
+
+                <a href="menu.html" class="category-card">
+
+                    <div class="category-icon">
+
+                        <img
+                            src="cold-drinks-category.png"
+                            alt="Cold Drinks"
+                        >
+
+                    </div>
+
+                    <h3>
+                        Cold Drinks
+                    </h3>
+
+                </a>
+
+
+                <!-- TEA -->
+
+                <a href="menu.html" class="category-card">
+
+                    <div class="category-icon">
+
+                        <img
+                            src="tea-category.png"
+                            alt="Tea"
+                        >
+
+                    </div>
+
+                    <h3>
+                        Tea
+                    </h3>
+
+                </a>
+
+
+                <!-- BAKERY -->
+
+                <a href="menu.html" class="category-card">
+
+                    <div class="category-icon">
+
+                        <img
+                            src="bakery-category.png"
+                            alt="Bakery"
+                        >
+
+                    </div>
+
+                    <h3>
+                        Bakery
+                    </h3>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- POPULAR ITEMS -->
+
+        <section class="popular">
+
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="eyebrow">
+                        CUSTOMER FAVORITES
+                    </p>
+
+                    <h2>
+                        Popular picks
+                    </h2>
+
+                </div>
+
+
+                <a href="menu.html">
+                    View full menu →
+                </a>
+
+            </div>
+
+
+            <div class="coffee-grid">
+
+
+                <!-- CAPPUCCINO -->
+
+                <article class="coffee-card">
+
+                    <div class="product-image cappuccino">
+    <img src="cappuccino.png" alt="Cappuccino">
+
+    <span class="badge">
+        BESTSELLER
+    </span>
+</div>
+
+
+                    <div class="coffee-info">
+
+                        <div class="product-title">
+
+                            <h3>
+                                Cappuccino
+                            </h3>
+
+                            <span>
+                                ₹160
+                            </span>
+
+                        </div>
+
+
+                        <p>
+                            Rich espresso, steamed milk
+                            and silky foam.
+                        </p>
+
+
+                       <button class="add-btn">
+    Add to cart
+    <span>+</span>
+</button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CARAMEL LATTE -->
+
+                <article class="coffee-card">
+
+                    <div class="product-image caramel">
+    <img src="caramel-latte.jpg" alt="Caramel Latte">
+</div>
+
+
+                    <div class="coffee-info">
+
+                        <div class="product-title">
+
+                            <h3>
+                                Caramel Latte
+                            </h3>
+
+                            <span>
+                                ₹180
+                            </span>
+
+                        </div>
+
+
+                        <p>
+                            Smooth espresso with creamy
+                            milk and caramel.
+                        </p>
+
+
+                        <button class="add-btn">
+    Add to cart
+    <span>+</span>
+</button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MATCHA -->
+
+                <article class="coffee-card">
+
+                    <div class="product-image matcha">
+    <img src="matcha-latte.jpg" alt="Matcha Latte">
+</div>
+
+
+                    <div class="coffee-info">
+
+                        <div class="product-title">
+
+                            <h3>
+                                Matcha Latte
+                            </h3>
+
+                            <span>
+                                ₹190
+                            </span>
+
+                        </div>
+
+
+                        <p>
+                            Creamy Japanese matcha
+                            blended with fresh milk.
+                        </p>
+
+
+                        <button class="add-btn">
+    Add to cart
+    <span>+</span>
+</button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+       
+    </main>
+
+
+    <!-- FOOTER -->
+
+   <footer>
+
+    <div class="footer-content">
+
+        <!-- BRAND -->
+        <div class="footer-brand">
+
+            <div class="footer-logo">
+
+                <span class="footer-logo-mark">
+                    <img src="logo.png" alt="">
+                </span>
+
+                <span>Brew & Bean</span>
+
+            </div>
+
+            <p>
+                Crafted for coffee lovers.
+            </p>
+
+        </div>
+
+
+        <!-- CONTACT -->
+        <div class="footer-column">
+
+            <h3>Contact</h3>
+
+            <p>
+                📞 +91 98765 43210
+            </p>
+
+            <p>
+                ✉️ hello@brewandbean.com
+            </p>
+
+            <p>
+                📍 Bengaluru, Karnataka
+            </p>
+
+        </div>
+
+
+        <!-- QUICK LINKS -->
+        <div class="footer-column">
+
+            <h3>Quick Links</h3>
+
+            <a href="menu.html">
+                Menu
+            </a>
+
+            <a href="reservations.html">
+                Reservations
+            </a>
+
+            <a href="orders.html">
+                Orders
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Brew & Bean. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+    
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

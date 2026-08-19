@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Brew & Bean | Checkout</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            <span class="logo-mark">☕</span>
+            Brew & Bean
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="#">Reservations</a>
+            <a href="#">Orders</a>
+        </nav>
+
+        <div class="nav-actions">
+
+    <a href="cart.html" class="cart-btn">
+        🛒 <span id="cartCount">0</span>
+    </a>
+
+    <div class="profile-container" id="profileContainer">
+
+        <button class="profile-btn" id="profileBtn">
+            Profile ▾
+        </button>
+
+        <div class="profile-dropdown" id="profileDropdown">
+
+            <div class="profile-info">
+
+                <strong id="profileName">
+                    User
+                </strong>
+
+                <span id="profileEmail"></span>
+
+                <span id="profilePhone"></span>
+
+            </div>
+
+            <button
+                id="logoutBtn"
+                class="logout-btn"
+            >
+                Logout
+            </button>
+
+        </div>
+
+    </div>
+
+    <button
+        class="login-btn"
+        id="loginProfileBtn"
+    >
+        Login
+    </button>
+
+</div>
+
+    </header>
+
+
+    <!-- CHECKOUT -->
+
+    <main class="checkout-page">
+
+        <div class="checkout-header">
+
+            <p class="eyebrow">ALMOST THERE</p>
+
+            <h1>Complete your order</h1>
+
+            <p>
+                Tell us where to bring your coffee.
+            </p>
+
+        </div>
+
+
+        <div class="checkout-layout">
+
+            <!-- CUSTOMER DETAILS -->
+
+            <section class="checkout-form">
+
+
+                <!-- YOUR DETAILS -->
+
+                <div class="form-card">
+
+                    <h2>Your details</h2>
+
+                    <div class="form-group">
+
+                        <label for="customerName">
+                            Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="customerName"
+                            placeholder="Enter your name"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="customerPhone">
+                            Phone number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="customerPhone"
+                            placeholder="Enter your phone number"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- ORDER DETAILS -->
+
+                <div class="form-card">
+
+                    <h2>Order details</h2>
+
+                    <div class="form-group">
+
+                        <label for="tableNumber">
+                            Table number
+                        </label>
+
+                        <input
+                            type="number"
+                            id="tableNumber"
+                            placeholder="e.g. 12"
+                            min="1"
+                        >
+
+                        <small>
+                            You can find your table number
+                            at your table.
+                        </small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="orderNotes">
+                            Special instructions
+                            <span>(optional)</span>
+                        </label>
+
+                        <textarea
+                            id="orderNotes"
+                            placeholder="Less sugar, extra hot, no ice..."
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PAYMENT METHOD -->
+
+                <div class="form-card">
+
+                    <h2>Payment method</h2>
+
+                    <div class="payment-options">
+
+                        <label class="payment-option">
+
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="counter"
+                                checked
+                            >
+
+                            <div>
+                                <strong>
+                                    Payment at Counter
+                                </strong>
+
+                                <span>
+                                    Pay by cash or card when
+                                    collecting your order.
+                                </span>
+                            </div>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ORDER SUMMARY -->
+
+            <aside class="checkout-summary">
+
+                <h2>Your order</h2>
+
+                <div id="checkoutItems"></div>
+
+                <div class="checkout-divider"></div>
+
+                <div class="checkout-row">
+
+                    <span>Subtotal</span>
+
+                    <strong id="checkoutSubtotal">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+                <div class="checkout-row">
+
+                    <span>Tax</span>
+
+                    <strong id="checkoutTax">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+                <div class="checkout-total">
+
+                    <span>Total</span>
+
+                    <strong id="checkoutTotal">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+                <button
+                    class="place-order-btn"
+                    id="placeOrderBtn"
+                >
+                    Place Order →
+                </button>
+
+
+                <a
+                    href="cart.html"
+                    class="back-to-cart"
+                >
+                    ← Back to cart
+                </a>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-logo">
+
+            <span>☕</span>
+
+            Brew & Bean
+
+        </div>
+
+
+        <p>
+            Crafted for coffee lovers.
+        </p>
+
+
+        <div class="footer-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="menu.html">
+                Menu
+            </a>
+
+            <a href="#">
+                Contact
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

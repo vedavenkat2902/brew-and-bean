@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Brew & Bean | Your Order</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-mark">
+                <img src="logo.png" alt="Brew & Bean">
+            </span>
+
+            <span>Brew & Bean</span>
+
+        </a>
+
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="menu.html">
+                Menu
+            </a>
+
+            <a href="reservations.html">
+                Reservations
+            </a>
+
+            <a href="orders.html" class="active">
+                Orders
+            </a>
+
+        </nav>
+
+
+        <div class="nav-actions">
+
+    <a href="cart.html" class="cart-btn">
+        🛒 <span id="cartCount">0</span>
+    </a>
+
+    <div class="profile-container" id="profileContainer">
+
+        <button class="profile-btn" id="profileBtn">
+            Profile ▾
+        </button>
+
+        <div class="profile-dropdown" id="profileDropdown">
+
+            <div class="profile-info">
+
+                <strong id="profileName">
+                    User
+                </strong>
+
+                <span id="profileEmail"></span>
+
+                <span id="profilePhone"></span>
+
+            </div>
+
+            <button
+                id="logoutBtn"
+                class="logout-btn"
+            >
+                Logout
+            </button>
+
+        </div>
+
+    </div>
+
+    <button
+        class="login-btn"
+        id="loginProfileBtn"
+    >
+        Login
+    </button>
+
+</div>
+
+    </header>
+
+
+    <!-- ================= ORDER PAGE ================= -->
+
+    <main class="orders-page">
+
+
+        <!-- ================= ORDER RECEIVED ================= -->
+        <!-- This is now ABOVE the No Orders section -->
+
+        <section
+            class="order-success"
+            id="orderSuccess"
+            style="display: none;"
+        >
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <p class="eyebrow">
+                ORDER RECEIVED
+            </p>
+
+            <h1>
+                Your order is on its way.
+            </h1>
+
+            <p class="success-message">
+                We've received your order and our baristas
+                are getting started.
+            </p>
+
+        </section>
+
+
+        <!-- ================= NO ORDER ================= -->
+
+        <section
+            class="no-order"
+            id="noOrder"
+        >
+
+            <div class="no-order-content">
+
+                <p class="eyebrow">
+                    YOUR ORDERS
+                </p>
+
+                <h1>
+                    No orders yet
+                </h1>
+
+                <p class="no-order-message">
+                    Your perfect cup is just a few clicks away.
+                    Explore our menu, choose your favorites,
+                    and we'll have them freshly prepared for you.
+                </p>
+
+                <a
+                    href="menu.html"
+                    class="primary-btn"
+                >
+                    Explore Menu
+                    <span>→</span>
+                </a>
+
+            </div>
+
+
+            <div class="no-order-visual">
+
+                <img
+                    src="hero-coffee.png"
+                    alt="Freshly brewed coffee"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ORDER CONTENT ================= -->
+
+        <section
+            class="order-content"
+            id="orderContent"
+            style="display: none;"
+        >
+
+
+            <!-- ================= ORDER DETAILS ================= -->
+
+            <div class="order-card">
+
+                <div class="order-card-header">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            YOUR ORDER
+                        </p>
+
+                        <h2>
+                            Order details
+                        </h2>
+
+                    </div>
+
+
+                    <div class="table-info">
+
+                        Table
+
+                        <strong id="orderTable">
+                            --
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ORDER ITEMS -->
+
+                <div id="orderItems"></div>
+
+
+                <div class="order-divider"></div>
+
+
+                <!-- SUBTOTAL -->
+
+                <div class="order-total-row">
+
+                    <span>
+                        Subtotal
+                    </span>
+
+                    <strong id="orderSubtotal">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+                <!-- TAX -->
+
+                <div class="order-total-row">
+
+                    <span>
+                        Tax
+                    </span>
+
+                    <strong id="orderTax">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+                <!-- TOTAL -->
+
+                <div class="order-grand-total">
+
+                    <span>
+                        Total
+                    </span>
+
+                    <strong id="orderTotal">
+                        ₹0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= ORDER INFORMATION ================= -->
+
+            <div class="order-card">
+
+                <p class="eyebrow">
+                    ORDER INFORMATION
+                </p>
+
+
+                <div class="customer-order-info">
+
+
+                    <!-- CUSTOMER -->
+
+                    <div>
+
+                        <span>
+                            Customer
+                        </span>
+
+                        <strong id="orderCustomer">
+                            --
+                        </strong>
+
+                    </div>
+
+
+                    <!-- PHONE -->
+
+                    <div>
+
+                        <span>
+                            Phone
+                        </span>
+
+                        <strong id="orderPhone">
+                            --
+                        </strong>
+
+                    </div>
+
+
+                    <!-- PAYMENT -->
+
+                    <div>
+
+                        <span>
+                            Payment
+                        </span>
+
+                        <strong id="orderPayment">
+                            --
+                        </strong>
+
+                    </div>
+
+
+                    <!-- SPECIAL INSTRUCTIONS -->
+
+                    <div>
+
+                        <span>
+                            Special instructions
+                        </span>
+
+                        <strong id="orderNotes">
+                            None
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= ACTIONS ================= -->
+
+            <div class="order-actions">
+
+                <a
+                    href="menu.html"
+                    class="primary-btn"
+                >
+                    Order something else →
+                </a>
+
+
+                <a
+                    href="index.html"
+                    class="secondary-btn"
+                >
+                    Back to Home
+                </a>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ================= POPULAR PICKS ================= -->
+
+    <section class="popular-picks orders-popular">
+
+
+        <div class="popular-header">
+
+            <div>
+
+                <p class="eyebrow">
+                    POPULAR PICKS
+                </p>
+
+                <h2>
+                    Something you might love.
+                </h2>
+
+            </div>
+
+
+            <a
+                href="menu.html"
+                class="view-menu-link"
+            >
+                View full menu →
+            </a>
+
+        </div>
+
+
+        <div class="popular-grid">
+
+
+            <!-- ================= CAPPUCCINO ================= -->
+
+            <div class="popular-card">
+
+                <div class="popular-image cappuccino-bg">
+
+                    <img
+                        src="cappuccino.png"
+                        alt="Cappuccino"
+                    >
+
+                </div>
+
+
+                <div class="popular-info">
+
+                    <div class="popular-title">
+
+                        <h3>
+                            Cappuccino
+                        </h3>
+
+                        <strong>
+                            ₹160
+                        </strong>
+
+                    </div>
+
+
+                    <p>
+                        Rich espresso, steamed milk and silky foam.
+                    </p>
+
+
+                    <button
+                        class="popular-add-btn"
+                        data-name="Cappuccino"
+                        data-price="160"
+                    >
+                        Add to cart
+                        <span>+</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= CARAMEL LATTE ================= -->
+
+            <div class="popular-card">
+
+                <div class="popular-image caramel-bg">
+
+                    <img
+                        src="caramel-latte.jpg"
+                        alt="Caramel Latte"
+                    >
+
+                </div>
+
+
+                <div class="popular-info">
+
+                    <div class="popular-title">
+
+                        <h3>
+                            Caramel Latte
+                        </h3>
+
+                        <strong>
+                            ₹180
+                        </strong>
+
+                    </div>
+
+
+                    <p>
+                        Smooth espresso with creamy milk and caramel.
+                    </p>
+
+
+                    <button
+                        class="popular-add-btn"
+                        data-name="Caramel Latte"
+                        data-price="180"
+                    >
+                        Add to cart
+                        <span>+</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= MATCHA LATTE ================= -->
+
+            <div class="popular-card">
+
+                <div class="popular-image matcha-bg">
+
+                    <img
+                        src="matcha-latte.jpg"
+                        alt="Matcha Latte"
+                    >
+
+                </div>
+
+
+                <div class="popular-info">
+
+                    <div class="popular-title">
+
+                        <h3>
+                            Matcha Latte
+                        </h3>
+
+                        <strong>
+                            ₹190
+                        </strong>
+
+                    </div>
+
+
+                    <p>
+                        Creamy Japanese matcha blended with fresh milk.
+                    </p>
+
+
+                    <button
+                        class="popular-add-btn"
+                        data-name="Matcha Latte"
+                        data-price="190"
+                    >
+                        Add to cart
+                        <span>+</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+
+        <div class="footer-logo">
+
+            <img
+                src="logo.png"
+                alt="Brew & Bean"
+            >
+
+            <span>
+                Brew & Bean
+            </span>
+
+        </div>
+
+
+        <p>
+            Crafted for coffee lovers.
+        </p>
+
+
+        <div class="footer-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="menu.html">
+                Menu
+            </a>
+
+            <a href="reservations.html">
+                Reservations
+            </a>
+
+        </div>
+
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

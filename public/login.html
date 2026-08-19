@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Brew & Bean | Login</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-mark">
+                <img src="logo.png" alt="Brew & Bean">
+            </span>
+
+            <span>Brew & Bean</span>
+
+        </a>
+
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="menu.html">
+                Menu
+            </a>
+
+            <a href="reservations.html">
+                Reservations
+            </a>
+
+            <a href="orders.html">
+                Orders
+            </a>
+
+        </nav>
+
+
+        <div class="nav-actions">
+
+            <a href="cart.html" class="cart-btn">
+                🛒 <span id="cartCount">0</span>
+            </a>
+
+            <a href="login.html" class="login-btn">
+                Login
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- LOGIN PAGE -->
+
+    <main class="login-page">
+
+        <section class="login-container">
+
+
+            <!-- LEFT SIDE -->
+
+            <div class="login-content">
+
+                <p class="eyebrow">
+                    WELCOME BACK
+                </p>
+
+                <h1>
+                    Good coffee is
+                    waiting for you.
+                </h1>
+
+                <p class="login-message">
+                    Sign in to your Brew & Bean account
+                    to manage your orders and reservations.
+                </p>
+
+
+                <form id="loginForm">
+
+
+                    <div class="form-group">
+
+                        <label for="loginEmail">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="loginEmail"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="loginPassword">
+                            Password
+                        </label>
+
+                        <input
+    type="password"
+    id="loginPassword"
+    placeholder="Enter your password"
+    minlength="8"
+    pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}"
+    title="Password must be at least 8 characters and include uppercase, lowercase, number and special character."
+    required
+>
+
+                    </div>
+
+
+                    <div class="login-options">
+
+                        <label class="remember-me">
+
+                            <input
+                                type="checkbox"
+                                id="rememberMe"
+                            >
+
+                            <span>
+                                Remember me
+                            </span>
+
+                        </label>
+
+                        <a href="#" id="forgotPassword">
+                            Forgot password?
+                        </a>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="login-submit-btn"
+                    >
+                        Login
+                        <span>→</span>
+                    </button>
+
+
+                    <p
+                        id="loginMessage"
+                        class="login-message-box"
+                    ></p>
+
+
+                </form>
+
+
+                <div class="register-link">
+
+                    <span>
+                        Don't have an account?
+                    </span>
+
+                    <a href="register.html">
+                        Create one
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT SIDE -->
+
+            <div class="login-visual">
+
+                <div class="login-circle">
+
+                    <img
+                        src="hero-coffee.png"
+                        alt="Freshly brewed coffee"
+                    >
+
+                </div>
+
+                <div class="login-visual-text">
+
+                    <p class="eyebrow">
+                        BREW & BEAN
+                    </p>
+
+                    <h2>
+                        Your favourite
+                        coffee, just a click away.
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-logo">
+
+            <img
+                src="logo.png"
+                alt="Brew & Bean"
+            >
+
+            <span>
+                Brew & Bean
+            </span>
+
+        </div>
+
+        <p>
+            Crafted for coffee lovers.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="menu.html">
+                Menu
+            </a>
+
+            <a href="reservations.html">
+                Reservations
+            </a>
+
+            <a href="orders.html">
+                Orders
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

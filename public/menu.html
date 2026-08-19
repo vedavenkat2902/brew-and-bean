@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Brew & Bean | Menu</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-mark">
+                <img src="logo.png" alt="">
+            </span>
+
+            <span>Brew & Bean</span>
+
+        </a>
+
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="menu.html" class="active">
+                Menu
+            </a>
+
+            <a href="reservations.html">
+                Reservations
+            </a>
+
+            <a href="orders.html">
+                Orders
+            </a>
+
+        </nav>
+
+
+        <div class="nav-actions">
+
+    <a href="cart.html" class="cart-btn">
+        🛒 <span id="cartCount">0</span>
+    </a>
+
+    <div class="profile-container" id="profileContainer">
+
+        <button class="profile-btn" id="profileBtn">
+            Profile ▾
+        </button>
+
+        <div class="profile-dropdown" id="profileDropdown">
+
+            <div class="profile-info">
+
+                <strong id="profileName">
+                    User
+                </strong>
+
+                <span id="profileEmail"></span>
+
+                <span id="profilePhone"></span>
+
+            </div>
+
+            <button
+                id="logoutBtn"
+                class="logout-btn"
+            >
+                Logout
+            </button>
+
+        </div>
+
+    </div>
+
+    <button
+        class="login-btn"
+        id="loginProfileBtn"
+    >
+        Login
+    </button>
+
+</div>
+
+    </header>
+
+
+    <!-- MENU HERO -->
+
+    <main>
+
+        <section class="menu-hero">
+
+            <div class="menu-hero-content">
+
+                <p class="eyebrow">
+                    FRESHLY BREWED
+                </p>
+
+                <h1>
+                    Something delicious
+                    <span>is waiting for you.</span>
+                </h1>
+
+                <p>
+                    From carefully brewed coffee to freshly baked
+                    treats, find something you'll love.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- MENU -->
+
+        <section class="menu-section">
+
+            <div class="menu-heading">
+
+                <div>
+
+                    <p class="eyebrow">
+                        EXPLORE OUR MENU
+                    </p>
+
+                    <h2>
+                        Pick your favorite.
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <!-- CATEGORIES -->
+
+            <div class="category-tabs">
+
+                <button
+                    class="category-tab active"
+                    data-category="all"
+                >
+                    All
+                </button>
+
+                <button
+                    class="category-tab"
+                    data-category="coffee"
+                >
+                    Coffee
+                </button>
+
+                <button
+                    class="category-tab"
+                    data-category="cold"
+                >
+                    Cold Drinks
+                </button>
+
+                <button
+                    class="category-tab"
+                    data-category="tea"
+                >
+                    Tea
+                </button>
+
+                <button
+                    class="category-tab"
+                    data-category="bakery"
+                >
+                    Bakery
+                </button>
+
+            </div>
+
+
+            <!-- PRODUCTS -->
+
+            <div class="menu-grid">
+
+
+                <!-- ================= COFFEE ================= -->
+
+
+                <!-- CAPPUCCINO -->
+
+                <article
+                    class="menu-card"
+                    data-category="coffee"
+                >
+
+                    <div class="menu-image">
+
+                        <img
+                            src="cappuccino.png"
+                            alt="Cappuccino"
+                        >
+
+                        <span class="badge">
+                            BESTSELLER
+                        </span>
+
+                    </div>
+
+
+                    <div class="menu-info">
+
+                        <div class="menu-title">
+
+                            <div>
+
+                                <h3>
+                                    Cappuccino
+                                </h3>
+
+                                <span class="product-type">
+                                    Espresso · Milk · Foam
+                                </span>
+
+                            </div>
+
+                            <strong>
+                                ₹160
+                            </strong>
+
+                        </div>
+
+
+                        <p>
+                            Rich espresso topped with steamed
+                            milk and silky microfoam.
+                        </p>
+
+
+                        <button class="menu-add-btn">
+    Add to cart
+    <span>+</span>
+</button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CARAMEL LATTE -->
+
+                <article
+                    class="menu-card"
+                    data-category="coffee"
+                >
+
+                    <div class="menu-image">
+
+                        <img
+                            src="caramel-latte.jpg"
+                            alt="Caramel Latte"
+                        >
+
+                    </div>
+
+
+                    <div class="menu-info">
+
+                        <div class="menu-title">
+
+                            <div>
+
+                                <h3>
+                                    Caramel Latte
+                                </h3>
+
+                                <span class="product-type">
+                                    Espresso · Caramel · Milk
+                                </span>
+
+                            </div>
+
+                            <strong>
+                                ₹180
+                            </strong>
+
+                        </div>
+
+
+                        <p>
+                            Smooth espresso blended with creamy
+                            milk and sweet caramel.
+                        </p>
+
+
+                       <button class="menu-add-btn">
+    Add to cart
+    <span>+</span>
+</button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MOCHA -->
+
+                <article
+                    class="menu-card"
+                    data-category="coffee"
+                >
+
+                    <div class="menu-image">
+
+                        <img
+                            src="mocha.jpg"
+                            alt="Mocha"
+                        >
+
+                    </div>
+
+
+                    <div class="menu-info">
+
+                        <div class="menu-title">
+
+                            <div>
+
+                                <h3>
+                                    Mocha
+                                </h3>
+
+                                <span class="product-type">
+                                    Espresso · Chocolate · Milk
+                                </span>
+
+                            </div>
+
+                            <strong>
+                                ₹190
+                            </strong>
+
+                        </div>
+
+
+                        <p>
+                            Velvety espresso combined with rich
+                            chocolate and steamed milk.
+                        </p>
+
+
+                        <button class="menu-add-btn">
+    Add to cart
+    <span>+</span>
+</button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ESPRESSO -->
+
+                <article
+                    class="menu-card"
+                    data-category="coffee"
+                >
+
+                    <div class="menu-image">
+
+                        <img
+                            src="espresso.jpg"
+                            alt="Espresso"
+                        >
+
+                    </div>
+
+
+                    <div class="menu-info">
+
+                        <div class="menu-title">
+
+                            <div>
+
+                                <h3>
+                                    Espresso
+                                </h3>
+
+                                <span class="product-type">
+                                    Espresso · Crema
+                                </span>
+
+                            </div>
+
+                            <strong>
+                                ₹120
+                            </strong>
+
+                        </div>
+
+
+                        <p>
+                            Bold and concentrated espresso
+                            with a rich golden crema.
+                        </p>
+
+
+                        <button class="menu-add-btn">
+    Add to cart
+    <span>+</span>
+</button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- AMERICANO -->
+
+                <article
+                    class="menu-card"
+                    data-category="coffee"
+                >
+
+                    <div class="menu-image">
+
+                        <img
+                            src="americano.jpg"
+                            alt="Americano"
+                        >
+
+                    </div>
+
+
+                    <div class="menu-info">
+
+                        <div class="menu-title">
+
+                            <div>
+
+                                <h3>
+                                    Americano
+                                </h3>
+
+                                <span class="product-type">
+                                    Espresso · Water
+                                </span>
+
+                            </div>
+
+                            <strong>
+                                ₹130
+                            </strong>
+
+                        </div>
+
+
+                        <p>
+                            Smooth espresso combined with hot
+                            water for a clean, balanced finish.
+                        </p>
+
+
+                       <button class="menu-add-btn">
+    Add to cart
+    <span>+</span>
+</button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CAFE LATTE -->
+
+                <article
+                    class="menu-card"
+                    data-category="coffee"
+                >
+
+                    <div class="menu-image">
+
+                        <img
+                            src="cafe-latte.jpg"
+                            alt="Cafe Latte"
+                        >
+
+                    </div>
+
+
+                    <div class="menu-info">
+
+                        <div class="menu-title">
+
+                            <div>
+
+                                <h3>
+                                    Café Latte
+                                </h3>
+
+                                <span class="product-type">
+                                    Espresso · Milk
+                                </span>
+
+                            </div>
+
+                            <strong>
+                                ₹170
+                            </strong>
+
+                        </div>
+
+
+                        <p>
+                            Smooth espresso with creamy steamed
+                            milk and delicate foam.
+                        </p>
+
+
+                        <button class="menu-add-btn">
+    Add to cart
+    <span>+</span>
+</button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ================= COLD DRINKS ================= -->
+
+                <!-- ================= COLD DRINKS ================= -->
+
+
+<!-- COLD COFFEE -->
+
+<article
+    class="menu-card"
+    data-category="cold"
+>
+
+    <div class="menu-image">
+
+        <img
+            src="cold-coffee.jpg"
+            alt="Cold Coffee"
+        >
+
+    </div>
+
+    <div class="menu-info">
+
+        <div class="menu-title">
+
+            <div>
+
+                <h3>Cold Coffee</h3>
+
+                <span class="product-type">
+                    Coffee · Milk · Ice
+                </span>
+
+            </div>
+
+            <strong>₹170</strong>
+
+        </div>
+
+        <p>
+            Chilled coffee blended with creamy
+            milk for a refreshing finish.
+        </p>
+
+        <button class="menu-add-btn">
+    Add to cart
+    <span>+</span>
+</button>
+
+    </div>
+
+</article>
+
+
+<!-- ICED AMERICANO -->
+
+<article
+    class="menu-card"
+    data-category="cold"
+>
+
+    <div class="menu-image">
+
+        <img
+            src="iced-americano.jpg"
+            alt="Iced Americano"
+        >
+
+    </div>
+
+    <div class="menu-info">
+
+        <div class="menu-title">
+
+            <div>
+
+                <h3>Iced Americano</h3>
+
+                <span class="product-type">
+                    Espresso · Water · Ice
+                </span>
+
+            </div>
+
+            <strong>₹150</strong>
+
+        </div>
+
+        <p>
+            Bold espresso chilled over ice
+            for a smooth and refreshing drink.
+        </p>
+
+       <button class="menu-add-btn">
+    Add to cart
+    <span>+</span>
+</button>
+
+    </div>
+
+</article>
+
+
+<!-- ICED LATTE -->
+
+<article
+    class="menu-card"
+    data-category="cold"
+>
+
+    <div class="menu-image">
+
+        <img
+            src="iced-latte.jpg"
+            alt="Iced Latte"
+        >
+
+    </div>
+
+    <div class="menu-info">
+
+        <div class="menu-title">
+
+            <div>
+
+                <h3>Iced Latte</h3>
+
+                <span class="product-type">
+                    Espresso · Milk · Ice
+                </span>
+
+            </div>
+
+            <strong>₹180</strong>
+
+        </div>
+
+        <p>
+            Smooth espresso poured over chilled
+            milk and ice for a creamy finish.
+        </p>
+
+        <button class="menu-add-btn">
+    Add to cart
+    <span>+</span>
+</button>
+
+    </div>
+
+</article>
+
+
+<!-- STRAWBERRY FRAPPE -->
+
+<article
+    class="menu-card"
+    data-category="cold"
+>
+
+    <div class="menu-image">
+
+        <img
+            src="strawberry-frappe.jpg"
+            alt="Strawberry Frappe"
+        >
+
+    </div>
+
+    <div class="menu-info">
+
+        <div class="menu-title">
+
+            <div>
+
+                <h3>Strawberry Frappe</h3>
+
+                <span class="product-type">
+                    Strawberry · Milk · Ice
+                </span>
+
+            </div>
+
+            <strong>₹200</strong>
+
+        </div>
+
+        <p>
+            Creamy strawberry blended with milk
+            and ice for a sweet chilled treat.
+        </p>
+
+        <button class="menu-add-btn">
+    Add to cart
+    <span>+</span>
+</button>
+
+    </div>
+
+</article>
+
+
+<!-- MANGO SMOOTHIE -->
+
+<article
+    class="menu-card"
+    data-category="cold"
+>
+
+    <div class="menu-image">
+
+        <img
+            src="mango-smoothie.jpg"
+            alt="Mango Smoothie"
+        >
+
+    </div>
+
+    <div class="menu-info">
+
+        <div class="menu-title">
+
+            <div>
+
+                <h3>Mango Smoothie</h3>
+
+                <span class="product-type">
+                    Mango · Milk · Ice
+                </span>
+
+            </div>
+
+            <strong>₹180</strong>
+
+        </div>
+
+        <p>
+            Smooth and creamy mango blended
+            with chilled milk and ice.
+        </p>
+
+        <button class="menu-add-btn">
+    Add to cart
+    <span>+</span>
+</button>
+
+    </div>
+
+</article>
+
+
+<!-- LEMON MINT COOLER -->
+
+<article
+    class="menu-card"
+    data-category="cold"
+>
+
+    <div class="menu-image">
+
+        <img
+            src="lemon-mint-cooler.jpg"
+            alt="Lemon Mint Cooler"
+        >
+
+    </div>
+
+    <div class="menu-info">
+
+        <div class="menu-title">
+
+            <div>
+
+                <h3>Lemon Mint Cooler</h3>
+
+                <span class="product-type">
+                    Lemon · Mint · Ice
+                </span>
+
+            </div>
+
+            <strong>₹150</strong>
+
+        </div>
+
+        <p>
+            Refreshing lemon and mint cooler
+            served chilled over ice.
+        </p>
+
+       <button class="menu-add-btn">
+    Add to cart
+    <span>+</span>
+</button>
+
+    </div>
+
+</article>
+
+                <!-- ================= TEA ================= -->
+
+                <!-- ================= TEA ================= -->
+
+
+<!-- MATCHA LATTE -->
+
+<article class="menu-card" data-category="tea">
+
+    <div class="menu-image">
+        <img src="matcha-latte.jpg" alt="Matcha Latte">
+    </div>
+
+    <div class="menu-info">
+
+        <div class="menu-title">
+            <div>
+                <h3>Matcha Latte</h3>
+
+                <span class="product-type">
+                    Matcha · Milk
+                </span>
+            </div>
+
+            <strong>₹190</strong>
+        </div>
+
+        <p>
+            Creamy Japanese matcha blended with
+            fresh milk for a smooth finish.
+        </p>
+
+        <button class="menu-add-btn">
+    Add to cart
+    <span>+</span>
+</button>
+
+    </div>
+
+</article>
+
+
+<!-- MASALA CHAI -->
+
+<article class="menu-card" data-category="tea">
+
+    <div class="menu-image">
+        <img src="masala-chai.jpg" alt="Masala Chai">
+    </div>
+
+    <div class="menu-info">
+
+        <div class="menu-title">
+            <div>
+                <h3>Masala Chai</h3>
+
+                <span class="product-type">
+                    Tea · Milk · Spices
+                </span>
+            </div>
+
+            <strong>₹120</strong>
+        </div>
+
+        <p>
+            Fragrant black tea brewed with milk
+            and aromatic Indian spices.
+        </p>
+
+        <button class="menu-add-btn">
+    Add to cart
+    <span>+</span>
+</button>
+
+    </div>
+
+</article>
+
+
+<!-- CLASSIC BLACK TEA -->
+
+<article class="menu-card" data-category="tea">
+
+    <div class="menu-image">
+        <img src="classic-black-tea.webp" alt="Classic Black Tea">
+    </div>
+
+    <div class="menu-info">
+
+        <div class="menu-title">
+            <div>
+                <h3>Classic Black Tea</h3>
+
+                <span class="product-type">
+                    Black Tea · Water
+                </span>
+            </div>
+
+            <strong>₹110</strong>
+        </div>
+
+        <p>
+            Smooth and refreshing black tea with
+            a rich, comforting flavour.
+        </p>
+
+        <button class="menu-add-btn">
+    Add to cart
+    <span>+</span>
+</button>
+
+    </div>
+
+</article>
+
+
+<!-- LEMON TEA -->
+
+<article class="menu-card" data-category="tea">
+
+    <div class="menu-image">
+        <img src="lemon-tea.jpg" alt="Lemon Tea">
+    </div>
+
+    <div class="menu-info">
+
+        <div class="menu-title">
+            <div>
+                <h3>Lemon Tea</h3>
+
+                <span class="product-type">
+                    Tea · Lemon
+                </span>
+            </div>
+
+            <strong>₹120</strong>
+        </div>
+
+        <p>
+            Light black tea finished with fresh
+            lemon for a bright, refreshing taste.
+        </p>
+
+       <button class="menu-add-btn">
+    Add to cart
+    <span>+</span>
+</button>
+
+    </div>
+
+</article>
+
+
+<!-- CHAMOMILE TEA -->
+
+<article class="menu-card" data-category="tea">
+
+    <div class="menu-image">
+        <img src="chamomile-tea.png" alt="Chamomile Tea">
+    </div>
+
+    <div class="menu-info">
+
+        <div class="menu-title">
+            <div>
+                <h3>Chamomile Tea</h3>
+
+                <span class="product-type">
+                    Chamomile · Herbs
+                </span>
+            </div>
+
+            <strong>₹140</strong>
+        </div>
+
+        <p>
+            Delicate herbal tea with a gentle
+            floral aroma and soothing finish.
+        </p>
+
+        <button class="menu-add-btn">
+    Add to cart
+    <span>+</span>
+</button>
+
+    </div>
+
+</article>
+
+
+<!-- TULSI TEA -->
+
+<article class="menu-card" data-category="tea">
+
+    <div class="menu-image">
+        <img src="tulsi-tea.jpg" alt="Tulsi Tea">
+    </div>
+
+    <div class="menu-info">
+
+        <div class="menu-title">
+            <div>
+                <h3>Tulsi Tea</h3>
+
+                <span class="product-type">
+                    Tulsi · Herbs
+                </span>
+            </div>
+
+            <strong>₹130</strong>
+        </div>
+
+        <p>
+            Refreshing herbal tea infused with
+            fragrant tulsi leaves.
+        </p>
+
+        <button class="menu-add-btn">
+    Add to cart
+    <span>+</span>
+</button>
+
+    </div>
+
+</article>
+
+
+                <!-- ================= BAKERY ================= -->
+
+                <!-- ================= BAKERY ================= -->
+
+
+<!-- BUTTER CROISSANT -->
+
+<article class="menu-card" data-category="bakery">
+
+    <div class="menu-image">
+        <img src="butter-croissant.jpeg" alt="Butter Croissant">
+    </div>
+
+    <div class="menu-info">
+
+        <div class="menu-title">
+
+            <div>
+                <h3>Butter Croissant</h3>
+
+                <span class="product-type">
+                    Butter · Pastry
+                </span>
+            </div>
+
+            <strong>₹120</strong>
+
+        </div>
+
+        <p>
+            Golden, flaky layers baked fresh
+            and finished with butter.
+        </p>
+
+       <button class="menu-add-btn">
+    Add to cart
+    <span>+</span>
+</button>
+
+    </div>
+
+</article>
+
+
+<!-- BLUEBERRY MUFFIN -->
+
+<article class="menu-card" data-category="bakery">
+
+    <div class="menu-image">
+        <img src="blueberry-muffin.jpg" alt="Blueberry Muffin">
+    </div>
+
+    <div class="menu-info">
+
+        <div class="menu-title">
+
+            <div>
+                <h3>Blueberry Muffin</h3>
+
+                <span class="product-type">
+                    Blueberry · Muffin
+                </span>
+            </div>
+
+            <strong>₹130</strong>
+
+        </div>
+
+        <p>
+            Soft, freshly baked muffin filled
+            with juicy blueberries.
+        </p>
+
+       <button class="menu-add-btn">
+    Add to cart
+    <span>+</span>
+</button>
+
+    </div>
+
+</article>
+
+
+<!-- CINNAMON ROLL -->
+
+<article class="menu-card" data-category="bakery">
+
+    <div class="menu-image">
+        <img src="cinnamon-roll.jpg" alt="Cinnamon Roll">
+    </div>
+
+    <div class="menu-info">
+
+        <div class="menu-title">
+
+            <div>
+                <h3>Cinnamon Roll</h3>
+
+                <span class="product-type">
+                    Cinnamon · Pastry
+                </span>
+            </div>
+
+            <strong>₹140</strong>
+
+        </div>
+
+        <p>
+            Soft swirled pastry filled with
+            fragrant cinnamon and sugar.
+        </p>
+
+        <button class="menu-add-btn">
+    Add to cart
+    <span>+</span>
+</button>
+
+    </div>
+
+</article>
+
+
+<!-- GARLIC BREAD -->
+
+<article class="menu-card" data-category="bakery">
+
+    <div class="menu-image">
+        <img src="garlic-bread.webp" alt="Garlic Bread">
+    </div>
+
+    <div class="menu-info">
+
+        <div class="menu-title">
+
+            <div>
+                <h3>Garlic Bread</h3>
+
+                <span class="product-type">
+                    Garlic · Butter · Bread
+                </span>
+            </div>
+
+            <strong>₹150</strong>
+
+        </div>
+
+        <p>
+            Warm toasted bread brushed with
+            garlic butter and herbs.
+        </p>
+
+       <button class="menu-add-btn">
+    Add to cart
+    <span>+</span>
+</button>
+
+    </div>
+
+</article>
+
+
+<!-- CHEESE TOAST -->
+
+<article class="menu-card" data-category="bakery">
+
+    <div class="menu-image">
+        <img src="cheese-toast.jpg" alt="Cheese Toast">
+    </div>
+
+    <div class="menu-info">
+
+        <div class="menu-title">
+
+            <div>
+                <h3>Cheese Toast</h3>
+
+                <span class="product-type">
+                    Bread · Cheese
+                </span>
+            </div>
+
+            <strong>₹140</strong>
+
+        </div>
+
+        <p>
+            Crispy toasted bread topped with
+            melted, creamy cheese.
+        </p>
+
+        <button class="menu-add-btn">
+    Add to cart
+    <span>+</span>
+</button>
+
+    </div>
+
+</article>
+
+
+<!-- CHOCOLATE CHIP COOKIE -->
+
+<article class="menu-card" data-category="bakery">
+
+    <div class="menu-image">
+        <img
+            src="chocolate-chip-cookie.jpg"
+            alt="Chocolate Chip Cookie"
+        >
+    </div>
+
+    <div class="menu-info">
+
+        <div class="menu-title">
+
+            <div>
+                <h3>Chocolate Chip Cookie</h3>
+
+                <span class="product-type">
+                    Chocolate · Cookie
+                </span>
+            </div>
+
+            <strong>₹100</strong>
+
+        </div>
+
+        <p>
+            Soft-baked cookie packed with
+            rich chocolate chips.
+        </p>
+
+       <button class="menu-add-btn">
+    Add to cart
+    <span>+</span>
+</button>
+
+    </div>
+
+</article>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-logo">
+
+            <span class="logo-mark">
+                <img src="logo.png" alt="">
+            </span>
+
+            <span>
+                Brew & Bean
+            </span>
+
+        </div>
+
+
+        <p>
+            Crafted for coffee lovers.
+        </p>
+
+
+        <div class="footer-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="reservations.html">
+                Reservations
+            </a>
+
+            <a href="orders.html">
+                Orders
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

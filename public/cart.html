@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Brew & Bean | Cart</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            <span class="logo-mark">☕</span>
+            Brew & Bean
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="#">Reservations</a>
+            <a href="#">Orders</a>
+        </nav>
+
+        <div class="nav-actions">
+
+    <a href="cart.html" class="cart-btn">
+        🛒 <span id="cartCount">0</span>
+    </a>
+
+    <div class="profile-container" id="profileContainer">
+
+        <button class="profile-btn" id="profileBtn">
+            Profile ▾
+        </button>
+
+        <div class="profile-dropdown" id="profileDropdown">
+
+            <div class="profile-info">
+
+                <strong id="profileName">
+                    User
+                </strong>
+
+                <span id="profileEmail"></span>
+
+                <span id="profilePhone"></span>
+
+            </div>
+
+            <button
+                id="logoutBtn"
+                class="logout-btn"
+            >
+                Logout
+            </button>
+
+        </div>
+
+    </div>
+
+    <button
+        class="login-btn"
+        id="loginProfileBtn"
+    >
+        Login
+    </button>
+
+</div>
+
+    </header>
+
+
+    <!-- CART -->
+
+    <main class="cart-page">
+
+        <div class="cart-header">
+
+            <p class="eyebrow">YOUR SELECTION</p>
+
+            <h1>Your Order</h1>
+
+            <p>
+                Review your items before placing your order.
+            </p>
+
+        </div>
+
+
+        <div class="cart-layout">
+
+            <!-- CART ITEMS -->
+
+            <section class="cart-items">
+
+                <div id="cartItems"></div>
+
+            </section>
+
+
+            <!-- ORDER SUMMARY -->
+
+            <aside class="order-summary">
+
+                <h2>Order Summary</h2>
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <strong id="subtotal">₹0</strong>
+                </div>
+
+                <div class="summary-row">
+                    <span>Tax</span>
+                    <strong id="tax">₹0</strong>
+                </div>
+
+                <div class="summary-divider"></div>
+
+                <div class="summary-total">
+                    <span>Total</span>
+                    <strong id="total">₹0</strong>
+                </div>
+
+               <button type="button" class="checkout-btn" id="checkoutBtn">
+    Continue to checkout
+</button>
+
+                <a href="menu.html" class="continue-shopping">
+                    ← Continue shopping
+                </a>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-logo">
+            <span>☕</span>
+            Brew & Bean
+        </div>
+
+        <p>Crafted for coffee lovers.</p>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="#">Contact</a>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

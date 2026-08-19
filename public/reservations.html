@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Brew & Bean | Reservations</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+           <span class="logo-mark">
+    <img src="logo.png" alt="Brew & Bean">
+</span>
+
+<span>Brew & Bean</span>
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="reservations.html" class="active">Reservations</a>
+            <a href="orders.html">Orders</a>
+        </nav>
+
+        <div class="nav-actions">
+
+    <a href="cart.html" class="cart-btn">
+        🛒 <span id="cartCount">0</span>
+    </a>
+
+    <div class="profile-container" id="profileContainer">
+
+        <button class="profile-btn" id="profileBtn">
+            Profile ▾
+        </button>
+
+        <div class="profile-dropdown" id="profileDropdown">
+
+            <div class="profile-info">
+
+                <strong id="profileName">
+                    User
+                </strong>
+
+                <span id="profileEmail"></span>
+
+                <span id="profilePhone"></span>
+
+            </div>
+
+            <button
+                id="logoutBtn"
+                class="logout-btn"
+            >
+                Logout
+            </button>
+
+        </div>
+
+    </div>
+
+    <button
+        class="login-btn"
+        id="loginProfileBtn"
+    >
+        Login
+    </button>
+
+</div>
+
+    </header>
+
+
+    <!-- RESERVATION -->
+
+    <main class="reservation-page">
+
+       <section class="reservation-header" id="reservationHero">
+
+            <p class="eyebrow">MAKE IT A MOMENT</p>
+
+            <h1>Reserve your table</h1>
+
+            <p>
+                Planning a coffee date, catching up with friends,
+                or simply enjoying some quiet time?
+            </p>
+
+        </section>
+
+
+        <section class="reservation-layout">
+
+            <!-- FORM -->
+
+            <div class="reservation-form">
+
+                <div class="form-card">
+
+                    <h2>Reservation details</h2>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="reservationDate">
+                                Date
+                            </label>
+
+                            <input
+                                type="date"
+                                id="reservationDate"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="reservationTime">
+                                Time
+                            </label>
+
+                            <select id="reservationTime">
+
+                                <option value="">
+                                    Select time
+                                </option>
+
+                                <option value="10:00 AM">
+                                    10:00 AM
+                                </option>
+
+                                <option value="11:00 AM">
+                                    11:00 AM
+                                </option>
+
+                                <option value="12:00 PM">
+                                    12:00 PM
+                                </option>
+
+                                <option value="1:00 PM">
+                                    1:00 PM
+                                </option>
+
+                                <option value="2:00 PM">
+                                    2:00 PM
+                                </option>
+
+                                <option value="4:00 PM">
+                                    4:00 PM
+                                </option>
+
+                                <option value="5:00 PM">
+                                    5:00 PM
+                                </option>
+
+                                <option value="6:00 PM">
+                                    6:00 PM
+                                </option>
+
+                                <option value="7:00 PM">
+                                    7:00 PM
+                                </option>
+
+                                <option value="8:00 PM">
+                                    8:00 PM
+                                </option>
+
+                                <option value="9:00 PM">
+                                    9:00 PM
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Number of guests
+                        </label>
+
+                        <div class="guest-options">
+
+                            <button
+                                type="button"
+                                class="guest-btn active"
+                                data-guests="1"
+                            >
+                                1
+                            </button>
+
+                            <button
+                                type="button"
+                                class="guest-btn"
+                                data-guests="2"
+                            >
+                                2
+                            </button>
+
+                            <button
+                                type="button"
+                                class="guest-btn"
+                                data-guests="3"
+                            >
+                                3
+                            </button>
+
+                            <button
+                                type="button"
+                                class="guest-btn"
+                                data-guests="4"
+                            >
+                                4
+                            </button>
+
+                            <button
+                                type="button"
+                                class="guest-btn"
+                                data-guests="5"
+                            >
+                                5
+                            </button>
+
+                            <button
+                                type="button"
+                                class="guest-btn"
+                                data-guests="6+"
+                            >
+                                6+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-card">
+
+                    <h2>Your details</h2>
+
+                    <div class="form-group">
+
+                        <label for="reservationName">
+                            Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="reservationName"
+                            placeholder="Enter your name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="reservationPhone">
+                            Phone number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="reservationPhone"
+                            placeholder="Enter your phone number"
+                            pattern="[0-9]{10}"
+                            maxlength="10"
+                            required
+                        >
+
+                    </div>
+                    <div class="different-details-option">
+
+    <label>
+        <input
+            type="checkbox"
+            id="useDifferentReservationDetails"
+        >
+
+        Use different name and phone number
+    </label>
+
+</div>
+
+
+                    <div class="form-group">
+
+                        <label for="reservationNotes">
+                            Special request
+                            <span>(optional)</span>
+                        </label>
+
+                        <textarea
+                            id="reservationNotes"
+                            placeholder="Birthday celebration, window seat..."
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="reserve-btn"
+                    id="reserveBtn"
+                >
+                    Confirm Reservation →
+                </button>
+
+            </div>
+
+
+            <!-- SIDE INFORMATION -->
+
+            <aside class="reservation-info">
+
+                <div class="reservation-image">
+
+                    <img
+                        src="reservation-coffee.jpg"
+                        alt="Coffee"
+                    >
+
+                </div>
+
+                <div class="reservation-info-content">
+
+                    <p class="eyebrow">
+                        YOUR EXPERIENCE
+                    </p>
+
+                    <h2>
+                        A table waiting
+                        just for you.
+                    </h2>
+
+                    <p>
+                        Reserve ahead and enjoy your coffee
+                        without worrying about finding a seat.
+                    </p>
+
+                    <div class="reservation-perks">
+
+                        <div>
+                            <span>✓</span>
+                            Easy online booking
+                        </div>
+
+                        <div>
+                            <span>✓</span>
+                            No booking fee
+                        </div>
+
+                        <div>
+                            <span>✓</span>
+                            Quick confirmation
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </section>
+<!-- RESERVATION SUCCESS -->
+
+<section
+    class="reservation-success"
+    id="reservationSuccess"
+    style="display: none;"
+>
+
+    <div class="success-icon">
+        ✓
+    </div>
+
+    <p class="eyebrow">
+        RESERVATION CONFIRMED
+    </p>
+
+    <h1>
+        Your table is waiting for you.
+    </h1>
+
+    <p class="success-message">
+        Your reservation has been confirmed successfully.
+        We look forward to welcoming you at Brew & Bean.
+    </p>
+
+    <div class="reservation-confirmation-card">
+
+        <div>
+            <span>Reservation ID</span>
+            <strong id="successReservationId">--</strong>
+        </div>
+
+        <div>
+            <span>Date</span>
+            <strong id="successReservationDate">--</strong>
+        </div>
+
+        <div>
+            <span>Time</span>
+            <strong id="successReservationTime">--</strong>
+        </div>
+
+        <div>
+            <span>Guests</span>
+            <strong id="successReservationGuests">--</strong>
+        </div>
+
+        <div>
+            <span>Name</span>
+            <strong id="successReservationName">--</strong>
+        </div>
+
+        <div>
+            <span>Phone</span>
+            <strong id="successReservationPhone">--</strong>
+        </div>
+
+    </div>
+
+    <p class="reservation-sms-note">
+        
+    </p>
+
+    <div class="success-actions">
+
+        <a href="index.html" class="primary-btn">
+            Back to Home →
+        </a>
+
+        <a href="reservations.html" class="secondary-btn">
+            Make another reservation
+        </a>
+
+    </div>
+
+</section>
+    </main>
+
+
+    <footer>
+
+        <div class="footer-logo">
+    <img src="logo.png" alt="Brew & Bean">
+    <span>Brew & Bean</span>
+</div>
+
+        <p>Crafted for coffee lovers.</p>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="orders.html">Orders</a>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
