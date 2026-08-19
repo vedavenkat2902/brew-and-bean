@@ -1,3 +1,8 @@
+// ================= API =================
+
+const API_BASE_URL =
+    "https://brew-and-bean.onrender.com";
+
 // ================= CART =================
 
 let cart =
@@ -511,7 +516,7 @@ const orderNotes =
 
                 const response =
                     await fetch(
-                        "http://localhost:3000/api/orders",
+                       `${API_BASE_URL}/api/orders`,
                         {
                             method: "POST",
 
@@ -744,7 +749,7 @@ async function displayLastOrder() {
 
         const response =
             await fetch(
-                `http://localhost:3000/api/orders/${user.id}`
+                 `${API_BASE_URL}/api/orders/${user.id}`
             );
 
 
@@ -1263,7 +1268,7 @@ if (reserveButton) {
 
                 const response =
                     await fetch(
-                        "http://localhost:3000/api/reservations",
+                         `${API_BASE_URL}/api/reservations`,
                         {
                             method: "POST",
 
@@ -1549,7 +1554,7 @@ if (registerForm) {
 
                 const response =
                     await fetch(
-                        "http://localhost:3000/api/register",
+                       `${API_BASE_URL}/api/register`,
                         {
                             method: "POST",
 
@@ -1679,7 +1684,7 @@ if (loginForm) {
 
                 const response =
                     await fetch(
-                        "http://localhost:3000/api/login",
+                      `${API_BASE_URL}/api/login`,
                         {
                             method: "POST",
 
