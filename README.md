@@ -45,7 +45,8 @@ The project was built to demonstrate frontend, backend, REST API, database, and 
 
 ## 🔗 Project Links
 
-**Live Demo:** [Coming soon](https://brew-and-bean-1.onrender.com)
+**Live Demo:** 
+https://brew-and-bean-1.onrender.com
 
 **GitHub Repository:**  
 https://github.com/YOUR-USERNAME/brew-and-bean
